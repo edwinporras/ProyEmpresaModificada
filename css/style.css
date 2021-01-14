@@ -9731,7 +9731,27 @@ textarea.form-control {
 .container_int_movil{
   width: 50%;
   height: 200px;
+ 
 }
+/* Paginas internas */
+/* Tienda online */
+.contenedor_boton_contact{
+  text-align: center;
+  margin-bottom: 3%;
+}
+.Tiendacontact{
+  font-weight: bolder !important;
+  background-color: #a01d1a !important;
+  border: 2px solid #0a0001 !important;
+  width: 31%;
+}
+.Tiendacontact:hover{
+  background-color: #25c43a !important;
+  border: 2px solid #7c1111 !important;
+}
+
+
+
 @media (max-width: 1280px){
   .cont_abue{
     height: 900px; 
