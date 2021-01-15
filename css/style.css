@@ -13189,15 +13189,17 @@ textarea.form-control {
 }
 
 .Tiendacontact {
-    font-weight: bolder !important;
+    font-weight: bolder;
     background-color: #a01d1a !important;
     border: 2px solid #0a0001 !important;
+    font-weight: bold !important;
     width: 31%;
 }
 
-.Tiendacontact:hover {
-    background-color: #25c43a !important;
+a.Tiendacontact.btn.btn-primary:hover {
+    background-color: #9c1c1cce !important;
     border: 2px solid #7c1111 !important;
+    color: white;
 }
 
 @media (max-width: 1280px) {
