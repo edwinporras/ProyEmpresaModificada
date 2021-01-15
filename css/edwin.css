@@ -1,22 +1,64 @@
 .cont_main_error{
     width: 100%;
     height: 100vh;
-    background: red;
+    /* background: red; */
     display: flex;
 }
 .cont_int_err{
     height: 100vh;
 }
+/* divisores grandes */
 .cont_err1{
     width: 15%;
-    background: green;
+    /* background: green; */
     text-align: center;
 }
 .cont_err2{
     width: 35%;
-    background: orangered;
+    /* background: orangered; */
 }
 .cont_err3{
     width: 50%;
-    background: goldenrod;
+    /* background: goldenrod; */
+    text-align: end;
+    padding-right: 10%;
+}
+/* fin divisores grandes */
+.cont_int_er1{
+    height: 25vh;
+}
+.cont_int_er2{
+    text-align: center;
+}
+.img_err{
+    transform: scale(1.2);
+}
+
+.titulo_er_main{
+    color: #3f3b51;
+    font-size: 92px;
+    font-weight: bold;
+    margin-top: 40%;
+    letter-spacing: 0.15em;
+    margin-bottom: 5%;
 } 
+.titulo_er_alt{
+    color: #e62e4a;
+    font-size: 30px;
+}
+.tit_alt_er{
+    font-size: 40px;
+    color: #e72542;
+    font-weight: bold;
+}
+.btn_err{
+    color: #fff !important;
+    width: 40%;
+    background-color: #c22524 !important;
+    margin-top: 4%;
+    font-size: 27px;
+    font-weight: bold;
+}
+.img_err2{
+    transform: scale(0.7);
+}
