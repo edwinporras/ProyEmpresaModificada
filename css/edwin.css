@@ -72,23 +72,24 @@
     display: flex;
     height: 100px;
     margin-bottom: 5%;
+    
     /* background-color: red; */
 }
 .main_int_pi{
-    width: 50%;
+    width: 40%;
     height: 100px;
     /* background-color: blue; */
-
+    place-self: center;
 }
 .main_int_pi>p{
     padding-top: 0;
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
-    height: 100px;
+    height: 100%;
 }
 .color_ok{
     background-color: red;
-    
+    height: auto;
 }
 
