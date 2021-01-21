@@ -179,7 +179,7 @@ sup {
 }
 
 a {
-    color: #78d5ef;
+    /* color: #78d5ef; */
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
@@ -9747,14 +9747,14 @@ body.menu-show {
 }
 
 span {
-    color: #96a1af;
+    color: #fff;
 }
 
 a {
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease;
-    color: #167ce9;
+    /* color: #167ce9; */
 }
 
 a:hover {
@@ -9964,7 +9964,7 @@ h5,
 
 .ftco-navbar-light.scrolled .navbar-toggler {
     border: none;
-    color: rgba(0, 0, 0, 0.5) !important;
+    color: #fff !important;
     border-color: rgba(0, 0, 0, 0.5) !important;
     cursor: pointer;
     padding-right: 0;
@@ -11260,9 +11260,9 @@ textarea.form-control {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.ftco-footer a {
+/* .ftco-footer a {
     color: rgba(255, 255, 255, 0.7);
-}
+} */
 
 .ftco-footer a:hover {
     color: #fff;
@@ -12821,17 +12821,20 @@ textarea.form-control {
 }
 
 .icon-twitter {
-    color: rgb(98, 233, 233);
+    /* color: rgb(98, 233, 233); */
+    color: white;
     font-size: 30px;
 }
 
 .icon-facebook {
-    color: rgb(38, 0, 255);
+    /* color: #3b5998; */
+    color: white;
     font-size: 30px;
 }
 
 .icon-instagram {
-    color: rgb(207, 202, 202);
+    /* color: rgb(207, 202, 202); */
+    color: white;
     font-size: 30px;
 }
 
@@ -12842,10 +12845,18 @@ textarea.form-control {
     margin: 0px auto;
     justify-content: center;
     margin-bottom: 5%;
+    padding-top: 5%;
 }
 
 .cont_int_info2 {
     width: 25%;
+}
+.redes_soc{
+    text-align: center;
+    margin: 0 auto;
+}
+.politics{
+    text-align: start;
 }
 
 .cont_int_info2>h3 {
@@ -13202,6 +13213,10 @@ a.Tiendacontact.btn.btn-primary:hover {
     color: white;
 }
  
+.politics>p{
+    text-align: initial;
+}
+
 @media (max-width: 1280px) {
     .cont_abue {
         height: 900px;
@@ -13251,5 +13266,8 @@ a.Tiendacontact.btn.btn-primary:hover {
     }
     .container_int_ind {
         height: 575px;
+    }
+    .politics > p{
+        text-align: center;
     }
 }
