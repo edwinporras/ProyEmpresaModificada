@@ -119,85 +119,79 @@
         </form>
     </div>
 
-
-
-
-
-
-    <!-- FORMULARIO INICIO -->
-
-    <!-- FORMULARIO FIN -->
-
-    <!-- EQUIPO DE TRABAJO -->
-
-    <!-- <section class="ftco-section bg-light">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section ftco-animate text-center">
-            <h2 class="mb-4">Our Experience Advisor</h2>
-          </div>
+<div class="cont_formulario_cont">
+   <form action="" class="formulario" id="formulario">
+        <!-- Campo Nombre usuario -->
+        <div class="formulario__group" id="group_nombre">
+            <label for="nombre" class="formulario_label">Nombre y Apellido</label>
+            <div class="formulario_group-input">
+                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ingrese nombre y apellido">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">
+                Este campo solo debe tener letras y espacios
+            </p>
         </div>
-        <div class="row">
-        	<div class="col-lg-4 mb-sm-4 ftco-animate">
-        		<div class="staff">
-        			<div class="d-flex mb-4">
-        				<div class="img" style="background-image: url(images/person_1.jpg);"></div>
-        				<div class="info ml-4">
-        					<h3><a href="teacher-single.html">Ivan Jacobson</a></h3>
-        					<span class="position">CSE Teacher</span>
-        					<p class="ftco-social d-flex">
-		                <a href="#" class="d-flex justify-content-center align-items-center"><span class="icon-twitter"></span></a>
-		                <a href="#" class="d-flex justify-content-center align-items-center"><span class="icon-facebook"></span></a>
-		                <a href="#" class="d-flex justify-content-center align-items-center"><span class="icon-instagram"></span></a>
-		              </p>
-        				</div>
-        			</div>
-        			<div class="text">
-        				<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-        			</div>
-        		</div>
-        	</div>
-        	<div class="col-lg-4 mb-sm-4 ftco-animate">
-        		<div class="staff">
-        			<div class="d-flex mb-4">
-        				<div class="img" style="background-image: url(images/person_2.jpg);"></div>
-        				<div class="info ml-4">
-        					<h3><a href="teacher-single.html">Ivan Jacobson</a></h3>
-        					<span class="position">CSE Teacher</span>
-        					<p class="ftco-social d-flex">
-		                <a href="#" class="d-flex justify-content-center align-items-center"><span class="icon-twitter"></span></a>
-		                <a href="#" class="d-flex justify-content-center align-items-center"><span class="icon-facebook"></span></a>
-		                <a href="#" class="d-flex justify-content-center align-items-center"><span class="icon-instagram"></span></a>
-		              </p>
-        				</div>
-        			</div>
-        			<div class="text">
-        				<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-        			</div>
-        		</div>
-        	</div>
-        	<div class="col-lg-4 mb-sm-4 ftco-animate">
-        		<div class="staff">
-        			<div class="d-flex mb-4">
-        				<div class="img" style="background-image: url(images/person_3.jpg);"></div>
-        				<div class="info ml-4">
-        					<h3><a href="teacher-single.html">Ivan Jacobson</a></h3>
-        					<span class="position">CSE Teacher</span>
-        					<p class="ftco-social d-flex">
-		                <a href="#" class="d-flex justify-content-center align-items-center"><span class="icon-twitter"></span></a>
-		                <a href="#" class="d-flex justify-content-center align-items-center"><span class="icon-facebook"></span></a>
-		                <a href="#" class="d-flex justify-content-center align-items-center"><span class="icon-instagram"></span></a>
-		              </p>
-        				</div>
-        			</div>
-        			<div class="text">
-        				<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-        			</div>
-        		</div>
-        	</div>
+
+        <!-- Campo correo -->
+        <div class="formulario__group" id="group_correo">
+            <label for="correo" class="formulario_label">Correo Electronico</label>
+            <div class="formulario_group-input">
+                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="Digite Correo Electronico">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">
+                El correo solo debe contener letra, numeros, puntos, guiones y gruion bajo
+            </p>
         </div>
-      </div>
-    </section> -->
+
+        <!-- Campo Telefono -->
+        <div class="formulario__group" id="group_telefono">
+            <label for="telefono" class="formulario_label">Telefono</label>
+            <div class="formulario_group-input">
+                <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Digite Numero telefonico">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">
+                El telefono solo puede contener numeros y el maximo son 10 numeros
+            </p>
+        </div>
+
+        <!-- Campo Descripcion -->
+        <div class="formulario__group" id="group_descripcion">
+            <label for="descripcion" class="formulario_label">Descripcion (Opcional)</label>
+            <div class="formulario_group-input">
+                <textarea name="descripcion" id="descripcion" class="txt_area formulario__input"></textarea>
+                <i class="txt_est_icon formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">
+                La descripcion debe tener un maximo de 1000 caracteres
+            </p>
+        </div>
+
+        <!-- terminos y condiciones -->
+        <div class="formulario__group" id="grupo__terminos">
+            <label class="formulario__label">
+                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                Acepto los terminos y condiciones
+            </label>
+        </div>
+
+        <div class="formulario__mensaje" id="formulario__mensaje">
+            <p>
+                <i class="fas fa-exclamation-triangle"><b>Error:</b>Por favor rellena el formulario correctamente.</i>
+            </p>
+        </div>
+        <div class="formulario__group formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario__btn">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+                Formulario enviado exitosamente!
+            </p>
+        </div>
+    </form> 
+</div>    
+    
+
 
     <footer class="ftco-footer ftco-bg-dark ftco-section img" style="background-attachment:fixed;">
     	<div class="overlay" style="z-index: -99;"></div>
@@ -258,7 +252,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script src="js/validacioness.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>

@@ -11,76 +11,79 @@ const expresiones = {
 }
 
 const campos = {
+	usuario: false,
 	nombre: false,
+	password: false,
 	correo: false,
 	telefono: false,
 	descripcion: false
 }
 
-const validarFormulario =(e)=>{
+const validarFormulario = (e) => {
 	switch (e.target.name) {
+
 		case "nombre":
-			validarCampo(expresiones.nombre, e.target, 'nombre'); // donde dice nombre tambien puede ser --> e.target.name
+			validarCampo(expresiones.nombre, e.target, 'nombre');
 		break;
+		
 		case "correo":
-			validarCampo(expresiones.correo, e.target, 'correo'); 
+			validarCampo(expresiones.correo, e.target, 'correo');
 		break;
 		case "telefono":
-			validarCampo(expresiones.telefono, e.target, 'telefono'); 
+			validarCampo(expresiones.telefono, e.target, 'telefono');
 		break;
 		case "descripcion":
 			validarCampo(expresiones.descripcion, e.target, 'descripcion'); 
 		break;
-		
-		
 		default:
 			break;
 	}
-};
+}
 
-const validarCampo = (expresion, input, campo)=>{
-	// Cuando es correcto == true
-	if (expresion.test(input.value)) {
+const validarCampo = (expresion, input, campo) => {
+	if(expresion.test(input.value)){
 		document.getElementById(`group_${campo}`).classList.remove('formulario__group-incorrecto');
 		document.getElementById(`group_${campo}`).classList.add('formulario__group-correcto');
-		document.querySelector(`#group_${campo} i`).classList.remove('fa-times-circle');
 		document.querySelector(`#group_${campo} i`).classList.add('fa-check-circle');
+		document.querySelector(`#group_${campo} i`).classList.remove('fa-times-circle');
 		document.querySelector(`#group_${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
 		campos[campo] = true;
-	// Cuando es Incorrecto == false
-	}else{
+	} else {
 		document.getElementById(`group_${campo}`).classList.add('formulario__group-incorrecto');
 		document.getElementById(`group_${campo}`).classList.remove('formulario__group-correcto');
-		document.querySelector(`#group_${campo} i`).classList.remove('fa-check-circle');
 		document.querySelector(`#group_${campo} i`).classList.add('fa-times-circle');
+		document.querySelector(`#group_${campo} i`).classList.remove('fa-check-circle');
 		document.querySelector(`#group_${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
 		campos[campo] = false;
 	}
 }
 
-inputs.forEach((input)=>{
+
+inputs.forEach((input) => {
 	input.addEventListener('keyup', validarFormulario);
 	input.addEventListener('blur', validarFormulario);
 });
-formulario.addEventListener('submit', (e)=>{
-	e.preventDefault(); //MIRAR SI BORRARLO
+
+formulario.addEventListener('submit', (e) => {
+	e.preventDefault();
 
 	const terminos = document.getElementById('terminos');
-	if (campos.nombre && campos.correo && campos.telefono && campos.descripcion && terminos.checked) {
+	if(campos.nombre && campos.correo && campos.telefono && terminos.checked ){
 		formulario.reset();
-		console.log('aca paso');
 
-		// document.getElementById('formulario__mensaje-exito').css({ "display": "block"});
-		document.getElementById('formulario__mensaje-exito').classList.add('.formulario__mensaje-exito-activo');
+		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
 		setTimeout(() => {
 			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
+			// document.getElementById(`formulario__mensaje`).classList.remove('formulario__mensaje');
+			// document.getElementById(`formulario__mensaje`).classList.add('testprueba');
+			
+			// document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
 		}, 5000);
 
-		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-			icono.classList.remove('formulario__grupo-correcto');
+		document.querySelectorAll('.formulario__group-correcto').forEach((icono) => {
+			icono.classList.remove('formulario__group-correcto');
 		});
-	}else{
+	} else {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
-		console.log('loco error');
 	}
 });
